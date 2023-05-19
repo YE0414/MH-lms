@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+
+input[type="checkbox"] + label{
+  display: inline-block;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+  position: relative;
+  top: 3px;
+  border: 1px solid var(--m-color01);
+  margin-right: 10px;
+}
+input[type="checkbox"]:checked + label::after{
+  position: absolute;
+  left: 0px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--m-color01);
+  color: var(--m-color01);
+  font-size: 16px;
+  text-align: center;
+  content: '✓';
+  box-sizing: border-box;
+  background: #fff;
+  cursor: pointer;
+  top: 0;
+  line-height: 14px;
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+.module {
+  height: calc(100vh - 50px);
+}
+form {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.j-form-h2 {
+  text-align: left;
+  border-bottom: 1px solid var(--m-color01);
+  padding-bottom: 30px;
+  margin-bottom: 5px;
+}
+.j-form-p {
+  font-size: 20px;
+  line-height: 38px;
+  font-weight: bold;
+  text-align: left;
+}
+.j-form-span {
+  color: red;
+  font-size: 12px;
+}
+.j-form-t_area {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  /* height: 250px; */
+}
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 175px;
+  resize: none;
+  padding: 10px;
+}
+textarea:focus {
+  outline: none;
+}
+.join_agree-label {
+  margin-right: 10px;
+}
+.join_cbox {
+  text-align: right;
+  line-height: 42px;
+}
+.join_agree {
+  font-size: 14px;
+}
+.j-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.j-form-f {
+  margin: 0 auto;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.j-form-input {
+  width: calc(100% - 170px);
+  border: none;
+  background-color: var(--m-color03);
+  padding: 10px;
+}
+.j-form-input:focus {
+  outline: none;
+}
+.j-form-label {
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.j-form-b_group {
+  margin: 0 auto;
+  width: 310px;
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.j-form-btn {
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  border: none;
+  color: var(--m-color02);
+  font-size: 16px;
+}
+.j-form-btn01 {
+  background-color: var(--m-color04);
+}
+.j-form-btn02 {
+  background-color: var(--m-color01);
+}
+.j-form_a_a_p {
+  line-height: 60px;
+  border-top: 1px solid var(--m-color01);
+  /* position: absolute; */
+  text-align: right;
+  right: 0;
+}
+#id_check_msg,
+#info_check_msg,
+#pass_check_msg {
+  font-size: 12px;
+}
+.j-form-h2_span {
+  position: absolute;
+  right: 0;
+  transform: translateY(30px);
+}
+.j-form-list {
+  width: 100%;
+  margin: 0px auto 20px;
+  font-size: 12px;
+  text-align: justify;
+  float: right;
+}
+.j-form-li {
+  list-style: circle;
+  margin-left: 15px;
+}
+@media screen and (max-width: 1024px) {
+  .module {
+    padding-top: 80px;
+  }
+
+  form {
+    padding-bottom: 100px;
+}
+@media screen and (max-width: 767px) {
+  input::placeholder {
+    font-size: 12px;
+  }
+  .j-form-b_group {
+    width: 100%;
+  }
+  .j-form-btn01 {
+    width: 20%;
+    background-color: #888;
+  }
+  .j-form-btn02 {
+    width: 70%;
+  }
+  .j-form_a_a_p {
+    line-height: 42px;
+  }
+  form {
+    padding-bottom: 100px;
+}
+}
+}

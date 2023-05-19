@@ -1,0 +1,43 @@
+@charset "utf-8";
+*{padding: 0; margin: 0;}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  font-weight: bold;
+  text-align: left;
+}
+.table td {
+  line-height: 80px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.btn{
+  display: inline-block;
+  width: 90px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+}
+.btn-sub{
+  width: 45px; line-height: 25px;
+}
+.btn-done{
+  border: 1px solid #002968;
+  color: #002968;
+}
+.btn-apply{
+  background: #002968;
+  border: 1px solid #002968;
+  border: none;
+  color: #fff;
+}
+.btn-reject{
+  background: var(--m-color04);
+  border: 1px solid var(--m-color04);
+  border: none;
+  color: #fff;
+}

@@ -1,0 +1,32 @@
+
+.todo-list{
+  width:440px;
+  text-align: center;
+  background: #fff;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 15px 0px 25px 0px;
+}
+
+.todo-list > li{
+  display: flex;
+  justify-content: space-between;
+  margin:0px 30px;
+  border-bottom: 1px solid #dfdfdf;
+  height:70px;
+  line-height: 70px;
+  font-size: 14px;
+}
+
+.todo-list > li > a{
+  width:70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.todo-list > li > span{
+  width:30%;
+  text-align: right;
+}

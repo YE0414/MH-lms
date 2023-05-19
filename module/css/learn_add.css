@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+.page-nav a{
+  color: var(--m-color02);
+}
+
+form > p {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0px;
+  border-bottom: 1px solid var(--m-color03);
+  line-height: 35px;
+}
+form label{
+  display: block;
+  width: 120px;
+}
+form input[type="text"]{
+  width: calc(100% - 120px);
+}
+form input{
+  height: 30px;
+  text-indent: 5px;
+}
+.learn-p-teacher_name select,.learn-p-teacher_name option:first-of-type{
+  text-align: center;
+}
+option:first-of-type~option{
+  text-align: left;
+}
+.learn-p-thumbnail input{
+  margin-left:45px;
+  margin-top: 6px;
+}
+.learn-p-learn_major input{
+  margin-top: 3px;
+  margin-right: 10px;
+}
+.learn-p-span{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+/* 주차별 */
+.learn_weekly-title{
+  display: block;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--m-color02);
+  width: 100%;
+  line-height: 40px;
+  text-indent: 16px;
+  background: var(--m-color01);
+}
+.learn_weekly{
+width: 100%;
+height: 6.25em;
+border: 1px solid var(--m-color03);
+box-sizing: border-box;
+resize: none;
+padding: 16px;
+font-size: 16px;
+}
+.learn_add-btn_wrap input{
+  text-indent: 0;
+}
+.btn{
+  display: inline-block;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  border: none;
+  color: var(--m-color02);
+  font-size: 16px;
+  text-align: center;
+}
+.btn-reset{
+  background-color: var(--m-color04);
+}
+.btn-apply{
+  margin-left: auto;
+  background-color: var(--m-color01);
+}
+.week_plus{
+  background: var(--m-color01);
+  color: var(--m-color02);
+  border: none;
+}
+.week_del{
+  background: none;
+  color: var(--m-color01);
+  border: none;
+}

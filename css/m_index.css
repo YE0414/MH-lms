@@ -1,0 +1,327 @@
+@media screen and (min-width:100px) and (max-width:1024px) {
+
+  .pc_index{
+    display: none;
+  }
+  .mobile_index{
+    display:block;
+  }
+
+  html{
+    overflow-y: scroll;
+    overflow-x:hidden;
+  }
+
+  .m-module{
+  }
+
+  /* 상단 배너 */
+  .m-page-nav{
+    width:100%;
+    padding-top: 50px;
+  }
+
+  .m-page-nav-banner{
+    height:50px;
+    width:100%;
+    background-image: url('../img/m-banner01.png');
+    background-size: cover;
+    position: relative;
+  }
+
+  .m-page-nav-banner > a {
+    width:130px;
+    height: 100%;
+    position: absolute;
+    right:0px;
+  }
+
+  .m-page-nav-banner > a > .nav-banner-bg{
+    width:130px;
+    height: 100%;
+    background: #002968;
+    mix-blend-mode: multiply;
+    position: absolute;
+    right:0px;
+  }
+
+  .nav-banner-font{
+    color:#fff;
+    text-align: center;
+    line-height: 50px;
+    z-index: 10;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+  /* 학년 및 이름 */
+  .page-nav__desc{
+    display: flex;
+    margin: 50px 0px;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .page-nav__desc > span:first-child{
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  /* 달력 */
+
+  .calendar{
+    width:100%;
+    height:100%;
+    padding:0px 20px;
+    box-sizing: border-box;
+  }
+
+  .calendar-prev{
+    transform: scaleX(-1);
+  }
+
+  .calendar-main{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    padding:0px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .calendar-main > li{
+    width:14%;
+    height:50px;
+    text-align: right;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .calendar-main > li:nth-child(-n+7) {
+    width:14%;
+    border-bottom: 1px solid #eaeaea;
+    margin:0px;
+  }
+
+  .today > span{
+    padding:7px 10px;
+    background: var(--m-color01);
+    font-weight: bold;
+    color:#fff;
+  }
+  
+  .calendar-year-month{
+    width:100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .calendar-year-month > p{
+    color:var(--m-color01);
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .calendar-todo-bg{
+    background: var(--m-color01);
+    width:100%;
+    height:100%;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+  }
+
+  .calendar-todo{
+    width:auto;
+    height:auto;
+    background: #fff;
+    padding:10px 10px;
+    box-sizing: border-box;
+    margin:0px 20px;
+  }
+
+  .calendar-todo > h3{
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left:20px;
+  }
+
+  .calendar-todo > ul{
+    padding:0px 20px 10px 20px;
+  }
+
+  .calendar-todo > ul > li{
+    line-height: 40px;
+    border-bottom: 1px solid #EAEAEA;
+  }
+
+  /* 수강과목 */
+  .m-learn_list-wrap{
+    display: block;
+    width: 100%; height: 100%;
+    padding:0px 20px;
+    box-sizing: border-box;
+  }
+  .m-index-class-wrap{
+    width: 100%; height: auto;
+    padding:30px 0px;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-bottom: 1px solid #EAEAEA ;
+    margin-bottom: 0px;
+  }
+
+  .m-index-class-wrap > a{
+    display: flex;
+    align-items: center;
+  }
+
+  .class-thumb{
+    width: 100px; height: 100px;
+    object-fit: cover;
+  }
+  .title-wrap{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .class-progress{
+    height:20px; width:60px;
+    background: var(--m-color01);
+    border-radius: 50px;
+    font-size: 12px;
+    color:#fff;
+    display: block;
+    margin-bottom:10px;
+    text-align: center;
+    line-height: 20px;
+  }
+  
+  .class-title{
+    display: flex;
+    justify-content: space-between;
+    line-height: 28px;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .class-info{
+    font-size: 14px;
+    color: #333;
+  }
+  .class-major{
+    color: var(--m-color01);
+    font-weight: 700;
+  }
+
+  .class-teacher{
+    padding-left: 30px;
+  }
+
+  .class-date{
+    display: block;
+    line-height: 30px;
+    display: none;
+  }
+
+  .class-dday{
+    font-weight: bold;
+    display: block;
+    line-height: 30px;
+  }
+
+  .learn_major_more{
+    width:100%;
+    height:50px;
+    margin:50px 0px;
+    box-sizing: border-box;
+    background: var(--m-color01);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+  }
+
+  /* 공지사항 */
+
+  .m-user-bg{
+    margin-bottom: 80px;
+    width: 100%;
+    height: 100%;
+    background: #efefef;
+    padding: 20px 0px 50px 0px;
+  }
+
+  .m-notice-wrap{
+    display: flex;
+    background: var(--m-color01);
+    color: var(--m-color02);
+    line-height: 60px;
+    justify-content: space-between;
+    margin:0px 20px;
+    box-sizing: border-box;
+  }
+
+  .m-notice-wrap > span{
+    height:60px;
+    display: block;
+    color: #fff;
+    align-items: center;
+    line-height: 60px;
+  }
+
+  .m-notice-more {
+    background: var(--m-color04);
+    width: 125px;
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .m-notice-more > a {
+    margin-right: 12px;
+    color: #fff;
+  }
+  
+  .m-notice-more > a > span {
+    margin-right: 12px;
+  }
+
+  .m-notice-list{
+    width:auto;
+    text-align: center;
+    margin: 0px 20px;
+    background: #fff;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    padding: 15px 0px 25px 0px;
+  }
+  .m-notice-list > li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px;
+    border-bottom: 1px solid #dfdfdf;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+  }
+  
+  .m-notice-list > li > a {
+    width: 60%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+  }
+  
+  .m-notice-list > li > span {
+    width: 40%;
+    text-align: right;
+  }
+  
+
+}

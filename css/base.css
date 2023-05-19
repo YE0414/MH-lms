@@ -1,0 +1,18 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+@media screen and (min-width: 1025px) {
+  html{overflow:hidden;}  
+}
+html{color:#333}
+*{padding : 0px; margin : 0px; font-family: 'Pretendard', sans-serif;}
+a{text-decoration: none;}
+ol, li, ul{list-style: none;}
+
+:root {
+  --m-color01 : #002968;
+  --m-color02 : #fff;
+  --m-color03 : #d9d9d9;
+  --m-color04 : #0086D1;
+  --m-color05 : #BF2605;
+}

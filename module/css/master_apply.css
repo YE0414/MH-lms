@@ -1,0 +1,139 @@
+@charset "utf-8";
+*{padding: 0; margin: 0;}
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th{
+  line-height: 40px;
+  border-bottom: 2px solid var(--m-color03);
+}
+.table th:not(:last-of-type) {
+  font-weight: 600;
+  text-align: left;
+}
+.table th:last-of-type{
+  font-weight: 600;
+  text-align: center;
+}
+.table td {
+  line-height: 80px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.table td:last-of-type{
+  text-align: center;
+}
+.apply-tab{
+  width: 120px;
+  height: 80px;
+  text-align: center;
+}
+.apply-tab form{
+  width: 120px;
+}
+#major{
+  display: block;
+  width: 120px;
+  height: 30px;
+  border: 1px solid #d9d9d9;
+  background: none;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  margin-bottom: 5px;
+}
+select {
+  -moz-appearance:none;  /* Firefox */
+  -webkit-appearance:none;  /* Safari and Chrome */
+  appearance:none;  /* 화살표 없애기 공통*/
+}
+select::-ms-expand {  /* IE10, IE11*/
+  display:none;   /*숨겨진 화살표의 영역유지 X */
+  display:hidden;  /*숨겨진 화살표의 영역유지 O */
+}
+.brn-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  display: inline-block;
+  width: 55px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+}
+.btn-sub{
+  display: block;
+  width: 56px; line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+.btn-done{
+  border: 1px solid #002968;
+  color: #002968;
+  background: var(--m-color02);
+}
+.btn-confirm{
+  border: 1px solid #002968;
+  color: var(--m-color01);
+  float: left;
+  background: var(--m-color02);
+}
+.btn-confirm1{
+  border: 1px solid #002968;
+  color: var(--m-color01);
+  background: var(--m-color02);
+}
+.btn-apply{
+  background: #002968;
+  border: 1px solid #002968;
+  color: #fff;
+}
+.btn-reject{
+  background: var(--m-color04);
+  border: 1px solid var(--m-color04);
+  border: none;
+  color: #fff;
+  float: right;
+} 
+.btn-delete{
+  background: var(--m-color05);
+  border: 1px solid var(--m-color04);
+  border: none;
+  color: #fff;
+  float: right;
+} 
+.prev, .next{
+  background: var(--m-color01);
+  color: #fff;
+  display: inline-block;
+  width: 50px;
+  line-height: 30px;
+  margin: 0px 15px;
+}
+.prev.disable, .next.disable{
+  background: #888;
+  color: #fff;
+  display: inline-block;
+  width: 50px;
+  line-height: 30px;
+}
+.pagination{
+  width: 50%;
+  margin: 15px auto 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.pagination a:not(.prev, .next){
+  color: #333;
+  padding: 0px 5px;
+  display: inline-block;
+  line-height: 30px;
+  width: 30px;
+}
+.pagination a.active{
+  color: var(--m-color01);
+  font-weight: 700;
+}
